@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AW Web</title>
+    <style>
+        /* 极简重置，让页面干净无干扰 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+
+        /* 标题卡片 – 纯视觉装饰，无多余元素 */
+        .title-card {
+            background: #ffffff;
+            padding: 3rem 5rem;
+            border-radius: 2rem;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s ease;
+        }
+
+        .title-card:hover {
+            transform: scale(1.01);
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            color: #0b1e33;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        /* 在移动设备上保持舒适尺寸 */
+        @media (max-width: 480px) {
+            .title-card {
+                padding: 2rem 2.5rem;
+                border-radius: 1.5rem;
+            }
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-card">
+        <h1>AW Web</h1>
+    </div>
+</body>
+</html>
